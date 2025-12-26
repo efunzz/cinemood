@@ -1,69 +1,97 @@
-# Cinemood
+# 🎬 Cinemood – Mood-Based Movie Discovery App
 
-**Cinemood** is a frontend website where users can discover movies based on their mood. This project integrates movie data from the **OMDb API** and trailer videos from the **TMDb API**. It was built as a personal project to practice API integration and state management in React.
+**Cinemood** is a frontend web application that allows users to discover movies based on their current mood.  
+The project integrates movie data from the **OMDb API** and trailer videos from the **TMDb API**. It was created as a personal project to practice **API integration**, **state management**, and **frontend development with React**.
 
-## Table of Contents
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [API Integration](#api-integration)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Future Improvements](#future-improvements)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+## 📦 Technologies
 
-## Features
+- React  
+- React Router DOM  
+- Vanilla CSS  
+- React Fast Marquee  
+- Clsx  
+- @tabler/icons-react 
 
-- **Mood-based movie selection**: Users can pick movies based on their mood.
-- **OMDb API integration**: Fetch movie details such as title, plot, and poster using the OMDb API.
-- **TMDb API integration**: Fetch movie trailers from TMDb and display them.
-- **Responsive design**: Vanilla CSS was used to style the website.
+## ✨ Features
 
-## Technologies Used
+### Mood-Based Movie Discovery
 
-- **React** (v18.3.1) - JavaScript library for building user interfaces
-- **React Router DOM** (v6.26.2) - Library for routing between different pages
-- **Vanilla CSS** - Custom styling without the use of Tailwind CSS
-- **React Fast Marquee** (v1.6.5) - For scrolling marquee effects
-- **Clsx** (v2.1.1) - Utility for conditionally joining class names
-- **@tabler/icons-react** (v3.17.0) - Icon library for adding simple icons
+- Select a mood to fetch movies that match it.
+- Display movie details: title, plot, and poster.
+- Show trailers from YouTube when available.
 
-> Note: Tailwind CSS and Framer Motion were included in the project’s dependencies, but were not used in the final implementation.
+### API Integration
 
-## API Integration
+- **OMDb API** – Fetches movie details (title, plot, IMDb ID).  
+- **TMDb API** – Fetches movie trailers using IMDb ID.
 
-Two APIs are used in this project:
+### User Experience
 
-1. **OMDb API**: Fetches movie details such as title, plot, and IMDb ID.
-2. **TMDb API**: Fetches movie trailers by utilizing the IMDb ID obtained from the OMDb API.
+- Responsive design built with vanilla CSS  
+- Smooth scrolling effects with React Fast Marquee  
+- Interactive icons with Tabler Icons
 
-## Movie Selection
 
-The movies used in this project were selected based on personal opinion and are intended as placeholders to demonstrate the website's functionality.
+## 🎯 User Interactions
 
-## Usage
+- Select moods from a dropdown or buttons  
+- Click movies to view details and trailer links  
+- Scroll horizontally through movie lists using marquee effect  
 
-1. Select a mood, and the app will fetch movies that match the mood from the OMDb API.
-2. Movie details such as the title, plot, and poster will be displayed.
-3. A YouTube trailer link will be provided for movies that have a trailer available.
 
-## Future Improvements
+## 👩🏽‍🍳 Development Process
 
-- **Animations**: Implement Framer Motion for smoother transitions and interactive elements.
-- **Tailwind CSS**: Apply Tailwind CSS for faster, more flexible styling in future versions.
-- **Enhanced movie search**: Add more advanced filtering options, such as genre or release year filters.
+- Set up a React project with component-based architecture.  
+- Implemented routing between main pages using React Router DOM.  
+- Integrated OMDb API to fetch dynamic movie data.  
+- Used TMDb API to fetch trailers linked to movies.  
+- Built UI components with vanilla CSS for layout and responsiveness.  
+- Added marquee scrolling for interactive movie lists using React Fast Marquee.  
+- Incorporated Tabler icons for clean, intuitive icons.  
+- Tested API calls and ensured smooth data rendering on the frontend.  
 
-## Acknowledgements
 
-- **OMDb API** and **TMDb API**: For providing movie data and trailers.
-- Special thanks to the developers behind:
-  - **React Fast Marquee**: For smooth scrolling marquee effects.
-  - **Tabler Icons**: For simple and customizable icons.
+## 📚 What I Learned
 
-## License
+### 🧠 API Integration & State Management
 
-This project is licensed under the Creative Commons Attribution 4.0 International License.  
-You are free to share and adapt the material, provided you give appropriate credit.
+- Learned how to combine data from two APIs (OMDb & TMDb) effectively.  
+- Managed React state to handle asynchronous API calls and loading states.  
 
-See the [LICENSE](./LICENSE) file for more details.
+### 🎨 Frontend Development
+
+- Built reusable React components.  
+- Designed a responsive UI using CSS without frameworks.  
+
+### 🔍 Debugging & Data Handling
+
+- Handled cases where movie trailers were missing.  
+- Learned to map API responses to frontend components efficiently.  
+
+### 📈 Overall Growth
+
+- Improved understanding of React, API usage, and dynamic frontend rendering.  
+- Learned to structure a small project for scalability and readability.  
+
+
+## 💭 Possible Improvements
+
+- Add **Framer Motion** animations for smoother UI interactions.  
+- Use **Tailwind CSS** for faster and more maintainable styling.  
+- Implement advanced **movie filtering** (genre, release year, ratings).  
+- Enhance UI/UX for mobile devices. mobile first approach
+
+
+## 🚦 Running the Project
+
+To run the project locally, follow these steps:
+
+1. Clone the repository to your machine.  
+2. Install dependencies: npm install
+3. Start the development server: npm start
+4. Open the app in your browser at: http://localhost:3000
+
+
+## 🍿 Demo / Video
+(Video link to be added)
